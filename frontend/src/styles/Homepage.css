@@ -1,0 +1,110 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 100px;
+}
+
+.date {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    display: none;
+}
+
+.title {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.title-image {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.article-text {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    text-align: justify;
+    color: #4e4c4c;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.article {
+    border-right: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+    padding: 20px;
+}
+
+.footer-container {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 100px;
+}
+
+/* Responsive grid styling */
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 100%;
+        margin: 20px 80px 50px 80px;
+    }
+
+    .article {
+        border-right: none;
+    }
+
+    .article:nth-child(6) {
+        border-bottom: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 40px;
+        margin: 50px 80px;
+    }
+
+    article:nth-child(2n-2) {
+        border-right: none;
+    }
+
+    article:nth-last-child(-n + 2) {
+        border-bottom: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1.25fr 1fr;
+        gap: 40px;
+        margin: 50px 80px;
+    }
+
+    article:nth-child(3n) {
+        border-right: none;
+    }
+
+    article:nth-last-child(-n + 3) {
+        border-bottom: none;
+    }
+
+    .date {
+        display: block;
+        position: absolute;
+        left: 30px;
+    }
+}

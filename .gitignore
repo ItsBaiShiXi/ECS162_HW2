@@ -1,0 +1,42 @@
+# Node.js
+node_modules/
+dist/
+.env
+.env.*  # Ignore .env.dev, .env.prod, etc.
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Vite and Svelte
+.svelte-kit/
+.vite/
+.vscode/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency lock files (if you're only using one package manager, keep one)
+package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Docker artifacts (optional)
+*.local
+docker-compose.override.yml
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore production build files if they are not meant to be versioned
+Dockerfile.prod
+docker-compose.prod.yml
+
+# Misc
+*.log

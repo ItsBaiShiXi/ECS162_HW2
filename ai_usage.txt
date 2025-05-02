@@ -1,0 +1,8 @@
+What AI tool did you use?
+ChatGPT
+
+How did you use it? What kind of questions did you ask? (include links to your conversation if applicable)
+I asked the AI to help me understand the starter code of HW2. For example, the app.py from backend, the json, ts file from frontend, and etc. Also, I asked the AI how to rewrite my HW1 setting and JS function to Svelte form. In addition, I used the AI to learn how to create the unit tests using Vitest. I asked it to make some examples of the tests cases and used these example to write my unit test.
+
+How much did it help you? How helpful and accurate was it?
+It help me quickly understand the HW2 and how do I need to start the project.  
